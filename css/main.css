@@ -37,3 +37,20 @@ img {
   display: inline-block;
 }
 OpenSans-Regular.woff2
+/* Mobile layout adjustment */
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  body {
+    font-size: 1.1em;
+  }
+}
