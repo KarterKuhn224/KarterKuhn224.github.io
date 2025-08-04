@@ -1,0 +1,35 @@
+/* Use a self-hosted font */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/css/OpenSans-Regular.woff2') format('woff2');
+}
+
+/* 1. Set background color for body */
+body {
+  background-color: #f4f4f4;
+  font-family: 'OpenSans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. h1 size and weight */
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* 3. Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Reusable button style */
+.btn-primary {
+  background-color: #0055aa;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
