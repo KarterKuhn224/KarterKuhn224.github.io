@@ -3,6 +3,9 @@
   font-family: 'OpenSans';
   src: url('/css/OpenSans-Regular.woff2') format('woff2');
 }
+.logo {
+  height: 40px;
+}
 
 /* 1. Set background color for body */
 body {
