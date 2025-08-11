@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Story | Mountain Bean Café</title>
+  <meta name="description" content="From trailhead pop‑ups to small‑batch roastery—how Mountain Bean Café started in Colorado and kept hikers caffeinated.">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Mountain Bean Café logo" width="120" height="40"></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div></header>
+
+  <main id="main" class="container">
+    <h1>Born on the Trail</h1>
+    <p><strong>Problem:</strong> Tourists fall in love with Colorado coffee, then lose it when vacation ends. Supermarket beans taste flat, and shipping from big brands is slow.</p>
+    <p><strong>Promise:</strong> We roast weekly at altitude and ship the same day. You get clean, bright cups at home—no matter your zip code—so the mountain morning follows you.</p>
+
+    <figure class="card" style="max-width:640px">
+      <img src="images/staff.jpg" alt="Our roasting team smiling beside the small‑batch roaster">
+      <figcaption class="muted">Small team. Small batches. Big flavor.</figcaption>
+    </figure>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Mountain Bean Café.</p></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();const b=document.querySelector('.nav-toggle'),m=document.getElementById('menu');b&&b.addEventListener('click',()=>{const e=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!e));m.classList.toggle('open');});</script>
+</body>
+</html>
