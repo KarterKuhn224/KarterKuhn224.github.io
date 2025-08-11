@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Colorado Roasts Delivered | Mountain Bean Café</title>
+  <meta name="description" content="Small-batch Colorado coffee for hikers and home brewers. Subscribe for fresh, fast, mountain-roasted beans.">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Mountain Bean Café logo" width="120" height="40"></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <h1>Bring the Mountains to Your Mug</h1>
+          <p>We roast at altitude for a cleaner, brighter cup—then ship fresh to your door. Summer tourists, meet your new year‑round habit.</p>
+          <a class="btn-primary" href="subscription.html">Subscribe now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Mountain Bean Café.</p></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();const b=document.querySelector('.nav-toggle'),m=document.getElementById('menu');b&&b.addEventListener('click',()=>{const e=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!e));m.classList.toggle('open');});</script>
+</body>
+</html>
