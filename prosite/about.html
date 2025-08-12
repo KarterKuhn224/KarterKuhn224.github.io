@@ -2,35 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About – Mountain Bean Café</title>
-  <meta name="description" content="Meet the small Colorado roaster turning summer tourists into lifelong coffee fans with ethical sourcing and simple brew guides.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/styles.css">
+  <title>About • Mountain Bean Café</title>
+  <meta name="description" content="About Mountain Bean, a simple Colorado roaster.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/pages/about.html" aria-current="page">About</a>
-      <a href="/services.html">Services</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/gallery.html">Gallery</a>
-    </nav>
+    <h1>About Us</h1>
   </header>
-
+  <nav aria-label="Primary">
+    <a href="/index.html">Home</a>
+    <a href="/pages/about.html" aria-current="page">About</a>
+    <a href="/pages/products.html">Products</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/location.html">Location</a>
+  </nav>
   <main>
-    <h1>Our Story</h1>
-    <p><strong>Problem:</strong> Travelers want great coffee but don’t have gear or time to learn complicated recipes.</p>
-    <p><strong>Promise:</strong> We roast approachable blends and provide easy brew guides so your first cup in the mountains tastes as good as home.</p>
-
+    <p><strong>Problem →</strong> Visitors need clear info: where we are, what we serve, and when we’re open.</p>
+    <p><strong>Promise →</strong> Plain menus, short lines, and friendly guidance—so you can get back to the mountains quickly.</p>
     <figure>
-      <img src="/images/roaster.jpg" alt="Coffee roaster with freshly roasted beans">
-      <figcaption>Small-batch roasting in Colorado.</figcaption>
+      <img src="/images/beans-2.jpg" alt="Pouring beans into a roaster">
+      <figcaption>Local image with alt text.</figcaption>
     </figure>
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  <footer>
+    <p>© <span id="y">2025</span> Mountain Bean Café</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
