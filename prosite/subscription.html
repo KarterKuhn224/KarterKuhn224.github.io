@@ -1,74 +1,56 @@
-<!doctype html>
+<<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coffee Subscription | Mountain Bean Café</title>
-  <meta name="description" content="Choose a plan and get fresh, Colorado‑roasted beans delivered on your schedule.">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Products • Mountain Bean Café</title>
+  <meta name="description" content="Simple menu with a table and gallery.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner">
-    <a class="brand" href="index.html"><img src="images/logo.png" alt="Mountain Bean Café logo" width="120" height="40"></a>
-    <nav class="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-      <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="subscription.html" aria-current="page">Subscription</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div></header>
+  <header>
+    <h1>Products</h1>
+    <p>Simple table and gallery (Chapter 6).</p>
+  </header>
+  <nav aria-label="Primary">
+    <a href="/index.html">Home</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/products.html" aria-current="page">Products</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/location.html">Location</a>
+  </nav>
+  <main>
+    <h2>Menu (Table)</h2>
+    <table class="table" aria-label="Coffee menu">
+      <thead>
+        <tr><th>Item</th><th>Size</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Drip Coffee</td><td>12 oz</td><td>$2.50</td></tr>
+        <tr><td>Latte</td><td>12 oz</td><td>$4.00</td></tr>
+        <tr><td>Cold Brew</td><td>16 oz</td><td>$4.50</td></tr>
+      </tbody>
+    </table>
 
-  <main id="main" class="container">
-    <h1>Pick Your Plan</h1>
-    <p class="muted">Freshly roasted beans, shipped the day they’re roasted. Pause or cancel anytime.</p>
-
-    <div class="card">
-      <table aria-describedby="pricing-desc">
-        <caption id="pricing-desc" class="sr-only">Four subscription plans with price and features</caption>
-        <thead>
-          <tr>
-            <th scope="col">Plan</th>
-            <th scope="col">Price</th>
-            <th scope="col">Features</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Trail Roast</th>
-            <td>$12 / month</td>
-            <td>1× 8 oz bag · Rotating roasts · Free tips newsletter</td>
-          </tr>
-          <tr>
-            <th scope="row">Weekend Hiker</th>
-            <td>$22 / month</td>
-            <td>2× 8 oz bags · Your Choice · Free shipping</td>
-          </tr>
-          <tr>
-            <th scope="row">Summit Sipper</th>
-            <td>$34 / month</td>
-            <td>3× 8 oz bags · Roasting Roasts + Free gift  · Free shipping</td>
-          </tr>
-          <tr>
-            <th scope="row">Basecamp Family</th>
-            <td>$42 / month</td>
-            <td>4× 8 oz bags · Mix & match · Priority support</td>
-          </tr>
-        </tbody>
-      </table>
+    <h2>Gallery (Local Images)</h2>
+    <div class="gallery">
+      <figure>
+        <img src="/images/gallery-1.jpg" alt="Cup of coffee on a wooden table">
+        <figcaption>Morning cup.</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/gallery-2.jpg" alt="Barista steaming milk">
+        <figcaption>Barista at work.</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/gallery-3.jpg" alt="Bags of whole beans">
+        <figcaption>Fresh beans.</figcaption>
+      </figure>
     </div>
-
-    <p style="margin-top:1rem">Every plan comes with our <strong>Altitude Freshness Guarantee</strong>: if it doesn’t taste mountain‑bright, we’ll replace it fast—no questions asked.</p>
-
-    <a class="btn-primary" href="#">Subscribe now</a>
   </main>
-
-  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Mountain Bean Café.</p></div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();const b=document.querySelector('.nav-toggle'),m=document.getElementById('menu');b&&b.addEventListener('click',()=>{const e=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!e));m.classList.toggle('open');});</script>
+  <footer>
+    <p>© <span id="y">2025</span> Mountain Bean Café</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
