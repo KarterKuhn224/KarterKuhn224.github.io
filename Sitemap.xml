@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Assignment 1: Homepage -->
   <url><loc>https://karterkuhn224.github.io/</loc></url>
-
-  <!-- Assignment 2: Tell Your Story -->
   <url><loc>https://karterkuhn224.github.io/pages/about.html</loc></url>
-
-  <!-- Assignment 3: Map the Experience -->
   <url><loc>https://karterkuhn224.github.io/services.html</loc></url>
   <url><loc>https://karterkuhn224.github.io/contact.html</loc></url>
-
-  <!-- Assignment 4: Home & QC -->
-  <url><loc>https://karterkuhn224.github.io/test.html</loc></url>
-
-  <!-- Assignment 5: Data-Driven Gallery -->
   <url><loc>https://karterkuhn224.github.io/gallery.html</loc></url>
-
-  <!-- Assignment 9: Mobile-First Capstone Site -->
-  <url><loc>https://karterkuhn224.github.io/marketing/</loc></url>
-  <url><loc>https://karterkuhn224.github.io/marketing/features.html</loc></url>
-  <url><loc>https://karterkuhn224.github.io/marketing/pricing.html</loc></url>
 </urlset>
