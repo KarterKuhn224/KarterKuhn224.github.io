@@ -1,0 +1,76 @@
+/* Self-hosted font */
+@font-face {
+  font-family: "Brand";
+  src: url("/fonts/brand.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base / Reset-ish */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background-color: #f7f7f7;      /* 1) required rule */
+  color: #111;
+  font-family: Brand, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; /* 2) universal font using @font-face */
+  line-height: 1.6;
+}
+.container { max-width: 960px; margin: 1rem auto; padding: 0 1rem; }
+.plain { list-style: none; padding-left: 0; }
+img { max-width: 100%; height: auto; }   /* 3) img rule */
+
+/* Headings */
+h1 { font-size: 2rem; font-weight: 700; margin: 1rem 0 0.5rem; }  /* 4) h1 size/weight */
+
+/* Header / Nav */
+.site-header { background: #fff; border-bottom: 1px solid #ddd; }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 0.75rem 1rem; }
+.nav a { text-decoration: none; color: #111; padding: 0.25rem 0.5rem; }
+.nav a[aria-current="page"] { text-decoration: underline; }
+.logo { border-radius: 6px; }
+
+/* Hero */
+.hero { background: #e9e9e9 url("/images/hero.jpg") center/cover no-repeat; }
+.hero .hero-copy { padding: 2rem 1rem; }
+.subhead { margin-top: 0.25rem; }
+
+/* Buttons */
+.btn-primary {                  /* 5) reusable button class */
+  display: inline-block;
+  background: #ffc107;
+  color: #111;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Tables */
+.pricing, .gallery { width: 100%; border-collapse: collapse; background: #fff; }
+.pricing th, .pricing td, .gallery td { border: 1px solid #ddd; padding: 0.5rem; }
+
+/* Map (responsive) */
+.map-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; }
+.map-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Footer */
+.site-footer { text-align: center; padding: 1rem; border-top: 1px solid #ddd; background: #fff; }
+
+/* Accessibility helper */
+.skip-link { position: absolute; left: -999px; top: 0; }
+.skip-link:focus { left: 0; background: #ffc107; color: #111; padding: 0.5rem; }
+
+/* Media queries (two required, ≤768px) */
+@media (max-width: 768px) {        /* 6) first query */
+  .nav { flex-direction: column; align-items: flex-start; }
+  h1 { font-size: 1.6rem; }
+  .pricing thead { display: none; }         /* stack pricing rows on small screens */
+  .pricing tr { display: block; margin-bottom: 0.75rem; }
+  .pricing td { display: block; }
+}
+
+@media (max-width: 600px) {        /* 7) second query */
+  .container { padding: 0 0.75rem; }
+  .gallery td { width: 33.33%; }   /* keeps thumbs tidy; prevents horizontal scroll */
+}
