@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>%%PAGE_TITLE%% – Mountain Bean Café</title>
-  <meta name="description" content="%%PAGE_DESCRIPTION%%">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/styles.css">
+  <title>REPLACEME • Moveable Basketball Scoreboard</title>
+  <meta name="description" content="Personal site showing a simple, moveable basketball scoreboard project.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/pages/about.html">About</a>
-      <a href="/services.html">Services</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/gallery.html">Gallery</a>
-    </nav>
+    <h1>Moveable Basketball Scoreboard</h1>
+    <p>Simple, class‑level demo site.</p>
   </header>
-
+  <nav aria-label="Primary">
+    <a href="/index.html">Home</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
   <main>
-    %%PAGE_MAIN%%
+    <!-- Replace this <main> content per page -->
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  <footer>
+    <p>© <span id="y">2025</span> Karter Kuhn. All rights reserved.</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
   </footer>
-  <!-- Optional: Google Analytics. If used, include only the official single script from GA. -->
 </body>
 </html>
