@@ -2,43 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Welcome to Mountain Bean Café – Colorado Roaster</title>
-  <meta name="description" content="Small-batch Colorado roaster serving tourists and locals. Shop beans, learn our story, and find us before your next hike.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/styles.css">
+  <title>Home • Mountain Bean Café</title>
+  <meta name="description" content="Small Colorado roaster serving hikers and tourists.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/pages/about.html">About</a>
-      <a href="/services.html">Services</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/gallery.html">Gallery</a>
-    </nav>
-  </header>
-
-  <main>
     <h1>Mountain Bean Café</h1>
-    <p>Welcome! We’re a small Colorado roaster helping summer tourists become year-round coffee lovers. Start with a bag of our trail-ready blends, or plan a visit on your next hike.</p>
+    <p>From trailhead to table—fresh roasts made simple.</p>
+  </header>
+  <nav aria-label="Primary">
+    <a href="/index.html" aria-current="page">Home</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/products.html">Products</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/location.html">Location</a>
+  </nav>
+  <main>
+    <h2>Our Story (Chapter 3)</h2>
+    <p><strong>Problem →</strong> Summer visitors want good coffee fast but don’t know which local roaster to trust.</p>
+    <p><strong>Promise →</strong> We roast small batches daily and keep the menu simple, so you get a consistent cup without the wait.</p>
 
-    <section aria-labelledby="cta">
-      <h2 id="cta">Start Here</h2>
-      <ul>
-        <li><a href="/pages/about.html">Our story</a> — why we roast and how we source.</li>
-        <li><a href="/services.html">Menu & services</a> — beans, brews, and bundles.</li>
-        <li><a href="/gallery.html">Product gallery</a> — see what’s on the bar.</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="highlights">
-      <h2 id="highlights">What makes us different</h2>
-      <p><strong>Problem → Promise:</strong> Big trips deserve better coffee. We promise fresh, sourced beans and brew guides that travel well.</p>
-    </section>
+    <figure>
+      <img src="/images/beans-1.jpg" alt="Fresh roasted coffee beans">
+      <figcaption>Local image with alt text.</figcaption>
+    </figure>
   </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Mountain Bean Café. All rights reserved.</p>
+  <footer>
+    <p>© <span id="y">2025</span> Mountain Bean Café</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
