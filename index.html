@@ -1,44 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Moveable Basketball Scoreboard – Portable, Pro Scoring</title>
-  <meta name="description" content="Portable basketball scoreboard for schools and rec leagues. Bright, durable, and easy to set up for any court or gym." />
-  <meta name="robots" content="index,follow" />
-  <link rel="stylesheet" href="/css/main.css" />
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home • Moveable Basketball Scoreboard</title>
+  <meta name="description" content="Overview of a basic, moveable basketball scoreboard project.">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class="container">
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/pages/about.html">About</a>
-      <a href="/gallery.html">Gallery</a>
-      <a href="/services.html">Services</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
+  <header>
+    <h1>Moveable Basketball Scoreboard</h1>
+    <p>This site documents a simple, portable scoreboard concept for gyms.</p>
   </header>
+  <nav aria-label="Primary">
+    <a href="/index.html" aria-current="page">Home</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Project Summary</h2>
+    <p><strong>Problem →</strong> Gyms and rec centers need a basic scoreboard that’s easy to move and set up.</p>
+    <p><strong>Promise →</strong> A simple, readable design with large digits, battery power, and wheels.</p>
 
-  <main class="container">
-    <h1>Take the Game Anywhere</h1>
-    <p>Our portable scoreboard brings pro-level scoring to any court.</p>
+    <figure>
+      <img src="/images/scoreboard-placeholder.jpg" alt="Moveable scoreboard concept on wheels">
+      <figcaption>Local image with meaningful alt text.</figcaption>
+    </figure>
 
-    <picture>
-      <img src="/images/logo.png" alt="Moveable Scoreboard logo" class="logo" />
-    </picture>
-
-    <p><a class="btn-primary" href="/services.html">Learn more</a></p>
+    <h2>What’s Here</h2>
+    <ul>
+      <li>Clean HTML and CSS only</li>
+      <li>Mobile‑friendly and validator‑clean</li>
+      <li>About page with the Problem → Promise copy formula</li>
+    </ul>
   </main>
-
-  <footer class="container">
-    <p>&copy; 2025 Karter Kuhn</p>
+  <footer>
+    <p>© <span id="y">2025</span> Karter Kuhn.</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
