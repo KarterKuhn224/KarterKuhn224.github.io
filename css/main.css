@@ -88,3 +88,8 @@ img { max-width: 100%; height: auto; }  /* A6: img max-width:100% */
   h1 { font-size: 1.6rem; }          /* typographic change for small screens */
   .gallery td { width: 33.33%; }     /* keep thumbs tidy; no horizontal scroll */
 }
+.scoreboard { max-width: 720px; margin: 2rem auto; text-align: center; }
+.row { display: flex; gap: 1rem; justify-content: center; }
+.team { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; width: 260px; }
+.team #homeScore, .team #awayScore { font-size: 3rem; margin: .5rem 0; }
+.buttons button, .period button, .controls button { margin: .25rem; }
