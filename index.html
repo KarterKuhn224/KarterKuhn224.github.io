@@ -1,128 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Movable Basketball Scoreboard – Portable Scoring Anywhere</title>
-  <meta name="description" content="Portable basketball scoreboard for schools, clubs, and tournaments—easy setup, clear display, and game-ready anywhere.">
-  <meta name="robots" content="index,follow">
+  <meta charset="utf-8">
+  <title>Home • Movable Basketball Scoreboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="/css/main.css">
-
-  <!-- Google Analytics (Assignment 8/10 bonus) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
+  <meta name="description" content="Learn about our simple movable basketball scoreboard concept.">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-  <script>
-  // === Simple Scoreboard Logic (Beginner-Friendly) ===
-  let home = 0;
-  let away = 0;
-  let period = 1;
-
-  // Update text on the page by element id
-  function update(id, value) { document.getElementById(id).textContent = value; }
-
-  // Add points to a team: addPoints('home', 1 | 2 | 3)
-  function addPoints(team, pts) {
-    if (team === 'home') { home += pts; update('homeScore', home); }
-    else if (team === 'away') { away += pts; update('awayScore', away); }
-  }
-
-  // Subtract a point (won’t go below 0)
-  function minusPoint(team) {
-    if (team === 'home') { home = Math.max(0, home - 1); update('homeScore', home); }
-    else if (team === 'away') { away = Math.max(0, away - 1); update('awayScore', away); }
-  }
-
-  // Set or advance the period
-  function nextPeriod() { period += 1; update('period', period); }
-  function resetPeriod() { period = 1; update('period', period); }
-
-  // Full reset
-  function resetAll() {
-    home = 0; away = 0; period = 1;
-    update('homeScore', home);
-    update('awayScore', away);
-    update('period', period);
-  }
-
-  // Initialize on load
-  document.addEventListener('DOMContentLoaded', () => {
-    update('homeScore', home);
-    update('awayScore', away);
-    update('period', period);
-  });
-</script>
-  <section class="scoreboard">
-  <h1>Portable Basketball Scoreboard</h1>
-
-  <div class="row">
-    <div class="team">
-      <h2>Home</h2>
-      <div id="homeScore">0</div>
-      <div class="buttons">
-        <button onclick="addPoints('home',1)">+1</button>
-        <button onclick="addPoints('home',2)">+2</button>
-        <button onclick="addPoints('home',3)">+3</button>
-        <button onclick="minusPoint('home')">−1</button>
-      </div>
-    </div>
-
-    <div class="team">
-      <h2>Away</h2>
-      <div id="awayScore">0</div>
-      <div class="buttons">
-        <button onclick="addPoints('away',1)">+1</button>
-        <button onclick="addPoints('away',2)">+2</button>
-        <button onclick="addPoints('away',3)">+3</button>
-        <button onclick="minusPoint('away')">−1</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="period">
-    <p>Period: <span id="period">1</span></p>
-    <button onclick="nextPeriod()">Next Period</button>
-    <button onclick="resetPeriod()">Reset Period</button>
-  </div>
-
-  <div class="controls">
-    <button onclick="resetAll()">Reset All</button>
-  </div>
-</section>
-
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="nav">
-      <img src="/images/logo.png" alt="Movable Basketball Scoreboard logo" class="logo" width="48" height="48">
-      <a href="/index.html" aria-current="page">Home</a>
+  <header>
+    <nav>
+      <a href="/index.html">Home</a>
       <a href="/pages/about.html">About</a>
       <a href="/services.html">Services</a>
       <a href="/gallery.html">Gallery</a>
       <a href="/contact.html">Contact</a>
-      <a href="/marketing/index.html">Marketing</a>
     </nav>
-
-    <div class="hero">
-      <h1>Portable Scoring Anywhere</h1>
-      <p class="subhead">Bring the game to life—indoors or outdoors—with a scoreboard that goes where you go.</p>
-      <a class="btn-primary" href="/services.html">See Services</a>
-    </div>
   </header>
 
- <p>
-  The web is today’s Main Street: it gives any business global reach, 24/7 access, and a clear address via DNS—the Internet’s address system—so schools, clubs, and fans can easily find our Movable Basketball Scoreboard.
-</p>
+  <main>
+    <section class="hero">
+      <h1>Movable Basketball Scoreboard</h1>
+      <p>A simple, portable scoreboard concept for gyms, youth leagues, and tournaments.</p>
+      <img src="/images/score1.jpg" alt="Portable scoreboard on a basketball court">
+    </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Movable Basketball Scoreboard</p>
+    <section class="grid">
+      <div class="card">
+        <h2>Portable</h2>
+        <p>Lightweight and easy to move from court to court.</p>
+      </div>
+      <div class="card">
+        <h2>Clear</h2>
+        <p>Large digits and clean layout keep scores readable for players and fans.</p>
+      </div>
+      <div class="card">
+        <h2>Simple</h2>
+        <p>Beginner-friendly project site using one stylesheet and basic HTML.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Movable Scoreboard Project</p>
   </footer>
 </body>
 </html>
