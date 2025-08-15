@@ -1,25 +1,13 @@
-* { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
-header { border-bottom: 1px solid #eee; }
-nav { display: flex; gap: 1rem; padding: 1rem; justify-content: center; flex-wrap: wrap; }
-nav a { text-decoration: none; color: #222; padding: .25rem .5rem; border-radius: .5rem; }
-nav a:hover { background: #f2f2f2; }
-main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-footer { border-top: 1px solid #eee; padding: 1rem; text-align: center; color: #666; }
-
-.hero { text-align: center; padding: 2rem 1rem; }
-.hero img { max-width: 100%; height: auto; border-radius: 8px; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.card { border: 1px solid #e5e5e5; padding: 1rem; border-radius: 8px; background: #fff; }
-
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.gallery img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid #eee; }
-
-.button { display: inline-block; padding: .5rem .75rem; border: 1px solid #ddd; border-radius: 6px; text-decoration: none; color: #222; }
-.button:hover { background: #f7f7f7; }
-
-/* One simple media query for ≤768px per rubric */
-@media (max-width: 768px) {
-  .grid, .gallery { grid-template-columns: 1fr 1fr; }
-  nav { gap: .5rem; }
-}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Arial,sans-serif;line-height:1.6}
+header{border-bottom:1px solid #eee}
+nav{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;padding:1rem}
+nav a{text-decoration:none;color:#222;padding:.25rem .5rem;border-radius:.5rem}
+nav a:hover{background:#f2f2f2}
+main{max-width:900px;margin:2rem auto;padding:0 1rem}
+h1{margin:.25rem 0 1rem}
+p{margin:.5rem 0}
+figure{margin:1rem 0}
+figure img{max-width:100%;height:auto;border:1px solid #eee;border-radius:8px;display:block}
+figcaption{font-size:.95rem;color:#666;margin-top:.25rem}
+footer{border-top:1px solid #eee;text-align:center;color:#666;padding:1rem}
+@media (max-width:768px){nav{gap:.5rem}}
