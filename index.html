@@ -58,6 +58,44 @@
     update('period', period);
   });
 </script>
+  <section class="scoreboard">
+  <h1>Portable Basketball Scoreboard</h1>
+
+  <div class="row">
+    <div class="team">
+      <h2>Home</h2>
+      <div id="homeScore">0</div>
+      <div class="buttons">
+        <button onclick="addPoints('home',1)">+1</button>
+        <button onclick="addPoints('home',2)">+2</button>
+        <button onclick="addPoints('home',3)">+3</button>
+        <button onclick="minusPoint('home')">−1</button>
+      </div>
+    </div>
+
+    <div class="team">
+      <h2>Away</h2>
+      <div id="awayScore">0</div>
+      <div class="buttons">
+        <button onclick="addPoints('away',1)">+1</button>
+        <button onclick="addPoints('away',2)">+2</button>
+        <button onclick="addPoints('away',3)">+3</button>
+        <button onclick="minusPoint('away')">−1</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="period">
+    <p>Period: <span id="period">1</span></p>
+    <button onclick="nextPeriod()">Next Period</button>
+    <button onclick="resetPeriod()">Reset Period</button>
+  </div>
+
+  <div class="controls">
+    <button onclick="resetAll()">Reset All</button>
+  </div>
+</section>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
