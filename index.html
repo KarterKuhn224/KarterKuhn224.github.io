@@ -18,6 +18,46 @@
     gtag('config', 'G-XXXXXXX');
   </script>
 </head>
+  <script>
+  // === Simple Scoreboard Logic (Beginner-Friendly) ===
+  let home = 0;
+  let away = 0;
+  let period = 1;
+
+  // Update text on the page by element id
+  function update(id, value) { document.getElementById(id).textContent = value; }
+
+  // Add points to a team: addPoints('home', 1 | 2 | 3)
+  function addPoints(team, pts) {
+    if (team === 'home') { home += pts; update('homeScore', home); }
+    else if (team === 'away') { away += pts; update('awayScore', away); }
+  }
+
+  // Subtract a point (won’t go below 0)
+  function minusPoint(team) {
+    if (team === 'home') { home = Math.max(0, home - 1); update('homeScore', home); }
+    else if (team === 'away') { away = Math.max(0, away - 1); update('awayScore', away); }
+  }
+
+  // Set or advance the period
+  function nextPeriod() { period += 1; update('period', period); }
+  function resetPeriod() { period = 1; update('period', period); }
+
+  // Full reset
+  function resetAll() {
+    home = 0; away = 0; period = 1;
+    update('homeScore', home);
+    update('awayScore', away);
+    update('period', period);
+  }
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', () => {
+    update('homeScore', home);
+    update('awayScore', away);
+    update('period', period);
+  });
+</script>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
