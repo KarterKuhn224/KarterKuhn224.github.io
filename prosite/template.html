@@ -1,42 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Template – Mountain Bean Café</title>
-  <meta name="description" content="Template with global navigation and footer.">
-  <meta name="robots" content="index,follow">
+  <title>{{PAGE_TITLE}} – Mountain Bean Café</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/main.css">
-
-  <!-- Google Analytics (paste real GA ID) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
+  <meta name="description" content="{{PAGE_DESCRIPTION}}">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="nav">
-      <img src="/images/logo.png" alt="Mountain Bean Café logo" class="logo" width="48" height="48">
-      <a href="/prosite/index.html">Home</a>
-      <a href="/prosite/about.html">About</a>
-      <a href="/prosite/subscription.html">Subscription</a>
-      <a href="/prosite/gallery.html">Gallery</a>
-      <a href="/prosite/contact.html">Contact</a>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Mountain Bean Café logo" width="160" height="auto">
+    </a>
+    <nav aria-label="Primary">
+      <a href="index.html" {{HOME_ACTIVE}}>Home</a>
+      <a href="about.html" {{ABOUT_ACTIVE}}>About</a>
+      <a href="subscription.html" {{SUB_ACTIVE}}>Subscription</a>
+      <a href="gallery.html" {{GALLERY_ACTIVE}}>Gallery</a>
+      <a href="contact.html" {{CONTACT_ACTIVE}}>Contact</a>
     </nav>
   </header>
 
-  <main id="main" class="container">
-    <!-- Replace with page-specific content -->
+  <main>
+    {{MAIN_CONTENT}}
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Mountain Bean Café</p>
+  <footer>
+    <p>© 2025 Mountain Bean Café • A beginner class project</p>
   </footer>
 </body>
 </html>
