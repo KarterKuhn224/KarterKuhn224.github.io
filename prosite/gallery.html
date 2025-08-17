@@ -1,52 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Gallery – Mountain Bean Café</title>
-  <meta name="description" content="Nine small photos that link to larger images. Simple and fast-loading.">
-  <meta name="robots" content="index,follow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/main.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-XXXXXXX');</script>
+  <meta name="description" content="Product and café images.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav">
-      <img src="/images/logo.png" alt="Mountain Bean Café logo" class="logo" width="48" height="48">
-      <a href="/prosite/index.html">Home</a>
-      <a href="/prosite/about.html">About</a>
-      <a href="/prosite/subscription.html">Subscription</a>
-      <a href="/prosite/gallery.html" aria-current="page">Gallery</a>
-      <a href="/prosite/contact.html">Contact</a>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Mountain Bean Café logo" width="160">
+    </a>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="subscription.html">Subscription</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main id="main" class="container">
-    <h1>Photo Gallery</h1>
-
-    <table class="gallery">
-      <tr>
-        <td><a href="/images/full1.jpg"><img src="/images/thumb1.jpg" alt="Bag of beans on counter, front label visible" width="120"></a></td>
-        <td><a href="/images/full2.jpg"><img src="/images/thumb2.jpg" alt="Drip coffee being poured into plain mug" width="120"></a></td>
-        <td><a href="/images/full3.jpg"><img src="/images/thumb3.jpg" alt="Small roaster drum with beans inside" width="120"></a></td>
-      </tr>
-      <tr>
-        <td><a href="/images/full4.jpg"><img src="/images/thumb4.jpg" alt="Beans cooling tray with scoop" width="120"></a></td>
-        <td><a href="/images/full5.jpg"><img src="/images/thumb5.jpg" alt="Simple café sign against sky" width="120"></a></td>
-        <td><a href="/images/full6.jpg"><img src="/images/thumb6.jpg" alt="Paper filters and kettle, prep scene" width="120"></a></td>
-      </tr>
-      <tr>
-        <td><a href="/images/full7.jpg"><img src="/images/thumb7.jpg" alt="Close-up of medium roast beans" width="120"></a></td>
-        <td><a href="/images/full8.jpg"><img src="/images/thumb8.jpg" alt="Plain bag lineup on shelf" width="120"></a></td>
-        <td><a href="/images/full9.jpg"><img src="/images/thumb9.jpg" alt="Cup of coffee on wooden table" width="120"></a></td>
-      </tr>
-    </table>
+  <main>
+    <h1>Gallery</h1>
+    <div class="grid">
+      <figure>
+        <img src="images/gallery1.jpg" alt="Pour-over coffee">
+        <figcaption>Pour-over</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery2.jpg" alt="Espresso shot">
+        <figcaption>Espresso</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery3.jpg" alt="Roasted coffee beans">
+        <figcaption>Roasted Beans</figcaption>
+      </figure>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Mountain Bean Café</p>
+  <footer>
+    <p>© 2025 Mountain Bean Café </p>
   </footer>
 </body>
 </html>
