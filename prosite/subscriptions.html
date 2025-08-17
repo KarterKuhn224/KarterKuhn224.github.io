@@ -1,49 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Subscription – Simple Coffee Plans</title>
-  <meta name="description" content="Four straightforward coffee subscriptions with clear prices and features.">
-  <meta name="robots" content="index,follow">
+  <title>Subscription – Mountain Bean Café</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/main.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-XXXXXXX');</script>
+  <meta name="description" content="Simple coffee subscriptions shipped from Colorado.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav">
-      <img src="/images/logo.png" alt="Mountain Bean Café logo" class="logo" width="48" height="48">
-      <a href="/prosite/index.html">Home</a>
-      <a href="/prosite/about.html">About</a>
-      <a href="/prosite/subscription.html" aria-current="page">Subscription</a>
-      <a href="/prosite/gallery.html">Gallery</a>
-      <a href="/prosite/contact.html">Contact</a>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Mountain Bean Café logo" width="160">
+    </a>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="subscription.html" aria-current="page">Subscription</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main id="main" class="container">
-    <h1>Subscription Plans</h1>
-    <p>Choose a simple plan. No extra steps.</p>
+  <main>
+    <h1>Simple Coffee Subscriptions</h1>
+    <p>No frills—fresh beans on your schedule. Cancel anytime.</p>
 
-    <table class="pricing">
+    <h2>Plans</h2>
+    <table class="plans">
       <thead>
-        <tr><th>Plan</th><th>Price</th><th>Features</th></tr>
+        <tr><th>Plan</th><th>Bag Size</th><th>Frequency</th><th>Price</th></tr>
       </thead>
       <tbody>
-        <tr><td>Sample</td><td>$9</td><td>2 small bags • one-time</td></tr>
-        <tr><td>Monthly</td><td>$14</td><td>1 bag • ships every month</td></tr>
-        <tr><td>Two-Bag</td><td>$24</td><td>2 bags • monthly</td></tr>
-        <tr><td>Family</td><td>$34</td><td>3 bags • monthly</td></tr>
+        <tr><td>Starter</td><td>12 oz</td><td>Monthly</td><td>$14</td></tr>
+        <tr><td>Regular</td><td>12 oz</td><td>Every 2 weeks</td><td>$26</td></tr>
+        <tr><td>Household</td><td>2 × 12 oz</td><td>Monthly</td><td>$26</td></tr>
       </tbody>
     </table>
 
-    <p><a class="btn-primary" href="mailto:orders@mountainbean.example">Subscribe now</a></p>
+    <h2>Subscribe</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label><br>
+      <input id="name" name="name" type="text" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input id="email" name="email" type="email" required><br><br>
+
+      <label for="plan">Choose a Plan</label><br>
+      <select id="plan" name="plan" required>
+        <option value="">Select…</option>
+        <option>Starter – 12 oz monthly ($14)</option>
+        <option>Regular – 12 oz every 2 weeks ($26)</option>
+        <option>Household – 2×12 oz monthly ($26)</option>
+      </select><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p><small>* Demo form only. Add a backend or form service later.</small></p>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Mountain Bean Café</p>
+  <footer>
+    <p>© 2025 Mountain Bean Café </p>
   </footer>
 </body>
 </html>
